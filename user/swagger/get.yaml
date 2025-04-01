@@ -5,7 +5,7 @@ parameters:
     name: sendResetLinkRequest
     type: Object
     schema:
-      $ref: "#/definitions/NewsAdd"
+      $ref: "#/definitions/UserGet"
     
 responses:
   "200":
@@ -18,7 +18,7 @@ responses:
     description: ""
 
 definitions:
-  NewsAdd:
+  UserGet:
     type: object
     properties:
       user_id:
