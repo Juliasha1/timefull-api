@@ -1,11 +1,11 @@
 tags:
-- User
+- Package -> Task
 parameters:
   - in: body
     name: sendResetLinkRequest
     type: Object
     schema:
-      $ref: "#/definitions/UserGet"
+      $ref: "#/definitions/EditTask"
     
 responses:
   "200":
@@ -18,12 +18,12 @@ responses:
     description: ""
 
 definitions:
-  UserGet:
+  EditTask:
     type: object
     properties:
       user_id:
         type: string
-        example: "1111"
+        example: "1"
 
 
 
