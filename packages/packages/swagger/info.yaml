@@ -1,11 +1,11 @@
 tags:
-- Package -> timer
+- Main -> Packages
 parameters:
   - in: body
     name: sendResetLinkRequest
     type: Object
     schema:
-      $ref: "#/definitions/EditTimeHistory"
+      $ref: "#/definitions/InfoPackage"
     
 responses:
   "200":
@@ -18,19 +18,12 @@ responses:
     description: ""
 
 definitions:
-  EditTimeHistory:
+  InfoPackage:
     type: object
     properties:
       userId:
         type: string
         example: "26"
-      work:
-        type: string
-        example: "1"
-      relax:
-        type: string
-        example: "1"
-      
 
 
 
