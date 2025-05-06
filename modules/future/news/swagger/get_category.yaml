@@ -1,0 +1,17 @@
+tags:
+- Package -> news
+
+# parameters:
+#   - in: body
+#     description: "page number"
+#     schema:
+#       $ref: "#/definitions/NewsGet"
+
+responses:
+  "200":
+    description: "A successful response"
+    content:
+      application/json:
+        schema:
+          type: "string"
+  
