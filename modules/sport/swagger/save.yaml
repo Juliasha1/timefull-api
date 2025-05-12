@@ -5,7 +5,7 @@ parameters:
     name: sendResetLinkRequest
     type: Object
     schema:
-      $ref: "#/definitions/AddSport"
+      $ref: "#/definitions/SaveSport"
     
 responses:
   "200":
@@ -18,24 +18,16 @@ responses:
     description: ""
 
 definitions:
-  AddSport:
+  SaveSport:
     type: object
     properties:
       userId:
         type: string
         example: "26"
-      title:
-        type: string
-        example: "Run"
-      distant:
-        type: int
-        example: 5
-      id:
-        type: int
-        example: 01931234242
-      date:
-        type: string
-        example: "102392131"
+      models:
+        type: json
+        example: {}
+     
 
 
 
