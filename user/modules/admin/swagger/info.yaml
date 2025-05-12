@@ -1,0 +1,33 @@
+tags:
+- Main -> Admin
+parameters:
+  - in: body
+    name: sendResetLinkRequest
+    type: Object
+    schema:
+      $ref: "#/definitions/AdminInfo"
+    
+
+responses:
+  "200":
+    description: ""
+    content:
+      application/json:
+        schema:
+          type: "string"
+  "404":
+    description: ""
+
+
+
+definitions:
+  AdminInfo:
+    type: object
+    properties:
+      userId:
+        type: string
+        example: "26"
+
+
+
+
