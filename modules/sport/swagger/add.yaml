@@ -30,6 +30,9 @@ definitions:
       distant:
         type: int
         example: 5
+      id:
+        type: int
+        example: 01931234242
       date:
         type: string
         example: "102392131"
