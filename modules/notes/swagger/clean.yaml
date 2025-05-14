@@ -1,11 +1,11 @@
 tags:
-- Main -> Packages
+- Package -> Note
 parameters:
   - in: body
     name: sendResetLinkRequest
     type: Object
     schema:
-      $ref: "#/definitions/AddPackage"
+      $ref: "#/definitions/CleanNotes"
     
 responses:
   "200":
@@ -18,21 +18,15 @@ responses:
     description: ""
 
 definitions:
-  AddPackage:
+  CleanNotes:
     type: object
     properties:
       userId:
         type: string
         example: "26"
-      packages: 
-        type: list
-        example: [{
-          "package" : "timer",
-          "state" : false
-        }]
-       
-     
-      
+      notesId:
+        type: List
+        example: []
 
 
 

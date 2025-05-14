@@ -1,11 +1,11 @@
 tags:
-- Package -> Timer
+- Package -> Economy
 parameters:
   - in: body
     name: sendResetLinkRequest
     type: Object
     schema:
-      $ref: "#/definitions/SaveTimer"
+      $ref: "#/definitions/DeleteEconomy"
     
 responses:
   "200":
@@ -18,7 +18,7 @@ responses:
     description: ""
 
 definitions:
-  SaveTimer:
+  DeleteEconomy:
     type: object
     properties:
       userId:
@@ -27,16 +27,7 @@ definitions:
       id:
         type: string
         example: "1"
-      history:
-        type: json
-        example: {
-          'work': 10,
-          'relax': 10,
-        }
-      historyForTimer:
-        type: json
-        example: {
-          'work': 10,
-          'relax': 10,
-        }
-      
+
+
+
+

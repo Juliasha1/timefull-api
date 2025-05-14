@@ -1,11 +1,11 @@
 tags:
-- Package -> Timer
+- Package -> Team
 parameters:
   - in: body
     name: sendResetLinkRequest
     type: Object
     schema:
-      $ref: "#/definitions/SaveTimer"
+      $ref: "#/definitions/DeleteTeam"
     
 responses:
   "200":
@@ -18,7 +18,7 @@ responses:
     description: ""
 
 definitions:
-  SaveTimer:
+  DeleteTeam:
     type: object
     properties:
       userId:
@@ -26,17 +26,9 @@ definitions:
         example: "26"
       id:
         type: string
-        example: "1"
-      history:
-        type: json
-        example: {
-          'work': 10,
-          'relax': 10,
-        }
-      historyForTimer:
-        type: json
-        example: {
-          'work': 10,
-          'relax': 10,
-        }
+        example: "0"
       
+
+
+
+

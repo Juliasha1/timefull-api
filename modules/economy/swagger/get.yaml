@@ -1,11 +1,11 @@
 tags:
-- Main -> Packages
+- Package -> Economy
 parameters:
   - in: body
     name: sendResetLinkRequest
     type: Object
     schema:
-      $ref: "#/definitions/AddPackage"
+      $ref: "#/definitions/GetEconomy"
     
 responses:
   "200":
@@ -18,21 +18,24 @@ responses:
     description: ""
 
 definitions:
-  AddPackage:
+  GetEconomy:
     type: object
     properties:
       userId:
         type: string
         example: "26"
-      packages: 
-        type: list
-        example: [{
-          "package" : "timer",
-          "state" : false
-        }]
-       
-     
-      
+      dateFrom:
+        type: int
+        example: 0
+      dateTo:
+        type: int
+        example: 5000000000
+      page:
+        type: int
+        example: 1
+      countOnPage:
+        type: int
+        example: 30
 
 
 

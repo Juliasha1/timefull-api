@@ -1,11 +1,11 @@
 tags:
-- Package -> Timer
+- Package -> Team
 parameters:
   - in: body
     name: sendResetLinkRequest
     type: Object
     schema:
-      $ref: "#/definitions/SaveTimer"
+      $ref: "#/definitions/TaskAdd"
     
 responses:
   "200":
@@ -18,25 +18,29 @@ responses:
     description: ""
 
 definitions:
-  SaveTimer:
+  TaskAdd:
     type: object
     properties:
       userId:
         type: string
         example: "26"
-      id:
+      title:
         type: string
-        example: "1"
-      history:
-        type: json
-        example: {
-          'work': 10,
-          'relax': 10,
-        }
-      historyForTimer:
-        type: json
-        example: {
-          'work': 10,
-          'relax': 10,
-        }
+        example: "title"
+      description:
+        type: string
+        example: "description"
+      date:
+        type: int
+        example: 019231
+      countOnDay:
+        type: int
+        example: 1
+      countOnTask:
+        type: int
+        example: 1
       
+
+
+
+
